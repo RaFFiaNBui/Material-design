@@ -7,6 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 
 public class ToolbarActivity extends AppCompatActivity {
 
@@ -19,6 +20,16 @@ public class ToolbarActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        findViewById(R.id.btn_show).setOnClickListener(v -> {
+            findViewById(R.id.progress_bar_1).setVisibility(View.VISIBLE);
+            findViewById(R.id.progress_bar_2).setVisibility(View.VISIBLE);
+        });
+
+        findViewById(R.id.btn_hide).setOnClickListener(v -> {
+            findViewById(R.id.progress_bar_1).setVisibility(View.INVISIBLE);
+            findViewById(R.id.progress_bar_2).setVisibility(View.INVISIBLE);
+        });
     }
 
     @Override

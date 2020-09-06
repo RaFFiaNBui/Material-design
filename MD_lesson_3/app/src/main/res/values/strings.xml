@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">MD_lesson_3</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Проект Васи Пупкина</string>
+    <string name="nav_header_subtitle">vasiapupkin@mail.ru</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_foto">Фото</string>
+    <string name="menu_gallery">Галлерея</string>
+    <string name="menu_video">Видео</string>
+    <string name="contact">Контакты</string>
+    <string name="phone">89569569595</string>
+    <string name="show">Show</string>
+    <string name="hide">Hide</string>
 </resources>
