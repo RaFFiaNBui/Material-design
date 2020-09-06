@@ -1,4 +1,4 @@
-package ru.samarin.materialdesign.ui.gallery;
+package ru.samarin.materialdesign.ui.nature;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,22 +14,22 @@ import androidx.lifecycle.ViewModelProviders;
 
 import ru.samarin.materialdesign.R;
 
-public class GalleryFragment extends Fragment {
+public class NatureFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
+    private NatureViewModel slideshowViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
-                ViewModelProviders.of(this).get(GalleryViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        slideshowViewModel =
+                ViewModelProviders.of(this).get(NatureViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_nature, container, false);
+/*        final TextView textView = root.findViewById(R.id.text_nature);
+        slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
-        });
+        });*/
         return root;
     }
 }

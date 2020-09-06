@@ -1,4 +1,4 @@
-package ru.samarin.materialdesign.ui.slideshow;
+package ru.samarin.materialdesign.ui.fruit;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,22 +14,22 @@ import androidx.lifecycle.ViewModelProviders;
 
 import ru.samarin.materialdesign.R;
 
-public class SlideshowFragment extends Fragment {
+public class FruitFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
+    private FruitViewModel homeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                ViewModelProviders.of(this).get(SlideshowViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
-        final TextView textView = root.findViewById(R.id.text_slideshow);
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        homeViewModel =
+                ViewModelProviders.of(this).get(FruitViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_fruit, container, false);
+/*        final TextView textView = root.findViewById(R.id.text_fruit);
+        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
-        });
+        });*/
         return root;
     }
 }

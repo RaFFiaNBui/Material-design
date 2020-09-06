@@ -1,4 +1,4 @@
-package ru.samarin.materialdesign.ui.home;
+package ru.samarin.materialdesign.ui.vegetables;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,22 +14,22 @@ import androidx.lifecycle.ViewModelProviders;
 
 import ru.samarin.materialdesign.R;
 
-public class HomeFragment extends Fragment {
+public class VegetablesFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
+    private VegetablesViewModel galleryViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
-        final TextView textView = root.findViewById(R.id.text_home);
-        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        galleryViewModel =
+                ViewModelProviders.of(this).get(VegetablesViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_vegetables, container, false);
+/*        final TextView textView = root.findViewById(R.id.text_vegetables);
+        galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
-        });
+        });*/
         return root;
     }
 }

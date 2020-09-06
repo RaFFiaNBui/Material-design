@@ -1,14 +1,14 @@
-package ru.samarin.materialdesign.ui.home;
+package ru.samarin.materialdesign.ui.fruit;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class FruitViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public FruitViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is home fragment");
     }
