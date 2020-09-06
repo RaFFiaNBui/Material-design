@@ -29,5 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        findViewById(R.id.btn_closer).setOnClickListener(v -> finish());
     }
 }
