@@ -16,6 +16,18 @@
     <string name="show">Show</string>
     <string name="hide">Hide</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    <string-array name="data_text">
+        <item>Фрукты</item>
+        <item>Овощи</item>
+        <item>Природа</item>
+        <item>Фрукты</item>
+        <item>Овощи</item>
+        <item>Природа</item>
+        <item>Фрукты</item>
+        <item>Овощи</item>
+        <item>Природа</item>
+    </string-array>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
