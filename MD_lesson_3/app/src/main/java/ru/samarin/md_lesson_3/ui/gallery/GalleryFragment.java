@@ -13,10 +13,21 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import ru.samarin.md_lesson_3.R;
+import ru.samarin.md_lesson_3.ui.home.HomeFragment;
 
 public class GalleryFragment extends Fragment {
 
     private GalleryViewModel galleryViewModel;
+
+    public static GalleryFragment newInstance(Bundle bundle) {
+        GalleryFragment currentFragment = new GalleryFragment();
+        Bundle args = new Bundle();
+        args.putBundle("getArgs", bundle);
+        currentFragment.setArguments(args);
+        return currentFragment;
+    }
+
+    public GalleryFragment() {}
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
