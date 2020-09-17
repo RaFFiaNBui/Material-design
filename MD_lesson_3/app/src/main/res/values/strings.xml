@@ -118,4 +118,5 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="heading">Заголовок</string>
+    <string name="home">Home</string>
 </resources>
