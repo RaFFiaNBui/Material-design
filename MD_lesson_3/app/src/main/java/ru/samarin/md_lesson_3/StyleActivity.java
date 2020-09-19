@@ -1,8 +1,8 @@
 package ru.samarin.md_lesson_3;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class StyleActivity extends AppCompatActivity {
 

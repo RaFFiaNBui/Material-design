@@ -8,24 +8,24 @@
     tools:context=".StyleActivity">
 
     <Button
-        android:text="Button 1"
+        style="@style/ButtonStyle"
         android:layout_marginTop="120dp"
-        style="@style/ButtonStyle" />
+        android:text="Button 1" />
 
     <Button
-        android:text="Button 2"
-        style="@style/ButtonStyle" />
+        style="@style/ButtonStyle"
+        android:text="Button 2" />
 
     <Button
-        android:text="Button 3"
-        style="@style/ButtonStyle" />
+        style="@style/ButtonStyle"
+        android:text="Button 3" />
 
     <Button
-        android:text="Button 4"
-        style="@style/ButtonStyle" />
+        style="@style/ButtonStyle"
+        android:text="Button 4" />
 
     <Button
-        android:text="Button 5"
-        style="@style/ButtonStyle" />
+        style="@style/ButtonStyle"
+        android:text="Button 5" />
 
 </LinearLayout>
