@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="ru.samarin.materialdesign.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:name="ru.samarin.materialdesign.ui.fruit.FruitFragment"
+        android:label="@string/menu_fruit"
+        tools:layout="@layout/fragment_fruit" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="ru.samarin.materialdesign.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:name="ru.samarin.materialdesign.ui.vegetables.VegetablesFragment"
+        android:label="@string/menu_vegetables"
+        tools:layout="@layout/fragment_vegetables" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="ru.samarin.materialdesign.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:name="ru.samarin.materialdesign.ui.nature.NatureFragment"
+        android:label="@string/menu_nature"
+        tools:layout="@layout/fragment_nature" />
 </navigation>
