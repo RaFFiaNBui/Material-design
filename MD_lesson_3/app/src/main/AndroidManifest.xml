@@ -10,19 +10,31 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity
-            android:name=".NavigationDrawerActivity"
-            android:label="@string/title_activity_navigation_drawer"
-            android:theme="@style/AppTheme.NoActionBar.NoActionBar">
-
-        </activity>
-        <activity android:name=".ToolbarActivity">
+            android:name=".ThemeActivity"
+            android:theme="@style/ThemeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".StyleActivity" />
+        <activity android:name=".BottomActivity">
+
+        </activity>
+        <activity android:name=".TabActivity" />
+        <activity android:name=".RecyclerActivity" />
+        <activity android:name=".FabActivity" />
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+        <activity
+            android:name=".NavigationDrawerActivity"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+        <activity android:name=".ToolbarActivity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

@@ -19,8 +19,8 @@
     <style name="AppTheme2" parent="AppTheme.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="windowNoTitle">true</item>
-        <item name="colorPrimary">#3F51B5</item>
-        <item name="colorPrimaryDark">#303F9F</item>
+        <item name="colorPrimary">#1AAA10</item>
+        <item name="colorPrimaryDark">#09710D</item>
         <item name="colorAccent">#CDDC39</item>
     </style>
 
@@ -30,4 +30,6 @@
         <item name="colorPrimaryDark">#455A64</item>
         <item name="colorAccent">#FF5722</item>
     </style>
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
