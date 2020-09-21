@@ -20,11 +20,15 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class Main2Activity extends AppCompatActivity {
 
+    public static final String NUMBER_THEME = "Number of theme";
+
     private AppBarConfiguration mAppBarConfiguration;
+    private int themeNumber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setupTheme(savedInstanceState);
         setContentView(R.layout.activity_main2);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -69,8 +73,41 @@ public class Main2Activity extends AppCompatActivity {
         switch (item.getItemId()) {
             case android.R.id.home:
                 finish();
-                return true;
+                break;
+            case R.id.theme_1:
+                themeNumber = 1;
+                break;
+            case R.id.theme_2:
+                themeNumber = 2;
+                break;
+            case R.id.theme_3:
+                themeNumber = 3;
+                break;
         }
+        recreate();
         return super.onOptionsItemSelected(item);
+    }
+
+    private void setupTheme(Bundle savedInstanceState) {
+        if (savedInstanceState != null) {
+            themeNumber = savedInstanceState.getInt(NUMBER_THEME);
+            switch (themeNumber) {
+                case 1:
+                    setTheme(R.style.AppTheme_NoActionBar);
+                    break;
+                case 2:
+                    setTheme(R.style.AppTheme2);
+                    break;
+                case 3:
+                    setTheme(R.style.AppTheme3);
+                    break;
+            }
+        }
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(NUMBER_THEME, themeNumber);
     }
 }

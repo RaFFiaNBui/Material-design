@@ -1,4 +1,4 @@
-package ru.samarin.md_lesson_3.ui.gallery;
+package ru.samarin.materialdesign.ui.tabs_fragment.fragment3;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,30 +12,30 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import ru.samarin.md_lesson_3.R;
-import ru.samarin.md_lesson_3.ui.home.HomeFragment;
+import ru.samarin.materialdesign.R;
 
-public class GalleryFragment extends Fragment {
+public class Fragment3 extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
+    private ViewModel3 slideshowViewModel;
 
-    public static GalleryFragment newInstance(Bundle bundle) {
-        GalleryFragment currentFragment = new GalleryFragment();
+    public static Fragment3 newInstance(Bundle bundle) {
+        Fragment3 currentFragment = new Fragment3();
         Bundle args = new Bundle();
         args.putBundle("getArgs", bundle);
         currentFragment.setArguments(args);
         return currentFragment;
     }
 
-    public GalleryFragment() {}
+    public Fragment3() {
+    }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
-                ViewModelProviders.of(this).get(GalleryViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        slideshowViewModel =
+                ViewModelProviders.of(this).get(ViewModel3.class);
+        View root = inflater.inflate(R.layout.fragment_tabs3, container, false);
+        final TextView textView = root.findViewById(R.id.text_fragment3_tabs);
+        slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

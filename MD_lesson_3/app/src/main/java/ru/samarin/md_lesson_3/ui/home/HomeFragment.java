@@ -18,6 +18,16 @@ public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
 
+    public static HomeFragment newInstance(Bundle bundle) {
+        HomeFragment currentFragment = new HomeFragment();
+        Bundle args = new Bundle();
+        args.putBundle("getArgs", bundle);
+        currentFragment.setArguments(args);
+        return currentFragment;
+    }
+
+    public HomeFragment() {}
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
